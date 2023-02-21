@@ -8,9 +8,6 @@ public class IdGenerator {
         String s = rgxGen.generate();                                        
         System.out.println("Random Project ID: " + s);
 
-        UUID uuid = UUID.randomUUID();
-        String uuidAsString = uuid.toString();
-
-        System.out.println("Random UUID: " + uuidAsString);
+        System.out.println("Random UUID: " + UUID.randomUUID().toString());
     }
 }
